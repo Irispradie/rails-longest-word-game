@@ -1,0 +1,12 @@
+<div class="container d-flex justify-content-center align-items-center flex-column vh-100">
+  <h1>Bienvenue andouille !</h1>
+  <ul>
+    <% @letters.each do |letter| %>
+      <li><%= letter %></li>
+    <% end %>
+  </ul>
+  <form action="answer" data-turbo="false" class="d-flex">
+    <input type="text" name="answer" class="d-flex flex-grow-1">
+    <input type="submit" value="Ask!" placeholder="Try!">
+  </form>
+</div>
